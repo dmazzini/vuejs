@@ -1,0 +1,26 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<div id="app-4">
+  <ol>
+    <li v-for="elemento in lista">
+      {{elemento.edad}}
+    </li>
+  </ol>
+  
+</div>
+
+<script>
+    
+var app4 = new Vue({
+  el: '#app-4',
+  data: {
+    lista: [
+      {text:'mensaje 1', edad: '8'},
+      {text:'mensaje 2', edad: '15'},
+      {text:'mensaje 3', edad: '65'}
+    ]
+  }
+})
+
+
+</script>

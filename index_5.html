@@ -1,0 +1,28 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<div id="app-5">
+  <p>{{ message }}</p>
+  <p>{{ otrocampo }}</p>
+  <button v-on:click="reverseMessage">{{textoboton}}</button>
+</div>
+
+<script>
+    
+var app4 = new Vue({
+  el: '#app-5',
+  data: {
+    message:'Velez campeon',
+    otrocampo: 'este es otro campo',
+    textoboton: 'Hace clic aca'
+  },
+  methods:{
+    reverseMessage: function () {
+      this.message = 'holaaaaaaaaaa'
+      this.otrocampo= 'chauuuuuuuuu' 
+      this.textoboton = 'Ya hiciste clic'
+    }
+  }
+})
+
+
+</script>
