@@ -3,6 +3,7 @@
 <div id="app-4">
   <ol>
     <li v-for="elemento in lista">
+      {{elemento.text}}
       {{elemento.edad}}
     </li>
   </ol>
@@ -15,9 +16,18 @@ var app4 = new Vue({
   el: '#app-4',
   data: {
     lista: [
-      {text:'mensaje 1', edad: '8'},
-      {text:'mensaje 2', edad: '15'},
-      {text:'mensaje 3', edad: '65'}
+      {
+        text:'mensaje 1', 
+        edad: '8'
+      },
+      {
+        text:'mensaje 2', 
+        edad: '15'
+      },
+      {
+        text:'mensaje 3', 
+        edad: '65'
+      }
     ]
   }
 })

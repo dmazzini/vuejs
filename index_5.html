@@ -4,6 +4,9 @@
   <p>{{ message }}</p>
   <p>{{ otrocampo }}</p>
   <button v-on:click="reverseMessage">{{textoboton}}</button>
+  <br>
+
+  <div v-if="bandera">Ahora me ves</div>
 </div>
 
 <script>
@@ -13,10 +16,12 @@ var app4 = new Vue({
   data: {
     message:'Velez campeon',
     otrocampo: 'este es otro campo',
-    textoboton: 'Hace clic aca'
+    textoboton: 'Hace clic aca',
+    bandera: false
   },
   methods:{
     reverseMessage: function () {
+      this.bandera= !this.bandera
       this.message = 'holaaaaaaaaaa'
       this.otrocampo= 'chauuuuuuuuu' 
       this.textoboton = 'Ya hiciste clic'
